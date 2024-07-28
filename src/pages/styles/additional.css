@@ -1,0 +1,127 @@
+.setting-container{
+    width: 60px;
+    height: 50px;
+    margin-left:50px;
+    display: flex;
+    align-items: center;
+    transform-origin: left;
+    transition-duration: .5s;
+    gap: 30px;
+    padding: 20px 0px;
+   
+}
+#labelforsetting{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        padding: 0px 20px;
+        background-image: url(src/svg/settings-svgrepo-com.svg);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition-duration: .5s;
+        cursor: pointer;
+}
+.invertsettinglabel{
+    filter: invert(1);
+}
+.settingactivate{
+    transform-origin: left;
+    width: 200px;
+    transition-duration: .5s;
+
+}
+.visualmodetogglebuttoncontainer{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:translate(-50px)scale(0);
+    transition-duration: .3s;
+}
+.visualmodeshow{
+    transition-duration: .3s;
+    transform: translate(0px)scale(1);
+}
+#switchforsetting{
+    display: none;
+}
+#switchforsetting:checked+#labelforsetting { 
+    transform: rotate(180deg);
+    transition-duration: .5s;
+
+}
+
+#labelforvisualmode {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(src/png/crescent-moon\ \(1\).png);
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#switchforvisualmode{
+    display: none;
+}
+#switchforvisualmode:checked+#labelforvisualmode { 
+    transform: rotate(360deg);
+    transition-duration: .5s;
+    background-image: url(src/png/sun.png);
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+/* for sound */
+.soundtogglebuttoncontainer{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-130px)scale(0);
+    transition-duration: .3s;
+}
+.soundmodeshow{
+    transition-delay: .1s;
+    transition-duration: .5s;
+    display: inline-block;
+    transform:translate(0px)scale(1);
+
+}
+#labelforsound {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-image: url(src/svg/Mute_Icon.svg);
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.invertapplied{
+   filter: invert(1);
+}
+#switchforsound{
+    display: none;
+}
+
+#switchforsound:checked+#labelforsound { 
+    transition-duration: .5s;
+    background-image: url(src/svg/Speaker_Icon.svg);
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center ;
+   
+}

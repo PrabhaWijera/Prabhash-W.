@@ -45,7 +45,7 @@ const Works = () => {
 								alt="facebook"
 								className="work-image"
 							/>
-							<div className="work-title">Prabhash Wijerathna Photgraphy</div>
+							<div className="work-title">Prabhash Wijerathna Photography</div>
 							<div className="work-subtitle">
 							Photographer
 							</div>
